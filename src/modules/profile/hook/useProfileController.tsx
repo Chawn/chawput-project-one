@@ -29,6 +29,10 @@ export default function useProfileController() {
 		try {
 			await verifyThaiNationID(data)
 			setIsVerifySuccess(true)
+			setUserData({
+				...userData,
+				thaiNationalIdNumber: data.thaiNationalIdNumber
+			})
 			setTimeout(() => {
 				setOpenDialogVerify(false)
 				setOpenDialogSuccess(true)

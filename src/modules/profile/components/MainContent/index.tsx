@@ -105,6 +105,13 @@ export default function MainContent() {
 
 	const { setOpenDialogVerify, userData, isVerifySuccess } = useProfileStore()
 
+	function convertString(inputString: string) {
+		const firstThree = inputString.substring(0, 3)
+		const lastThree = inputString.substring(inputString.length - 3)
+		const asterisks = '*'.repeat(inputString.length - 6)
+		return firstThree + asterisks + lastThree
+	}
+
 	return (
 		<Box className={classes.card}>
 			<Box>
@@ -195,7 +202,7 @@ export default function MainContent() {
 									Thai National ID
 								</Typography>
 								<Typography className={`${classes.info__subtitle}`}>
-									{userData.thaiNationalIdNumber}
+									{convertString(userData.thaiNationalIdNumber)}
 									<VerifiedIcon />
 								</Typography>
 							</Box>

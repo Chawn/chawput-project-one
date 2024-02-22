@@ -28,4 +28,4 @@ export const useProfileStore = create<IState>((set: any) => ({
 	setIsVerifySuccess: (success: boolean) => set({ isVerifySuccess: success })
 }))
 
-mountStoreDevtool('usePtzStore', useProfileStore)
+mountStoreDevtool('useProfileStore', useProfileStore)

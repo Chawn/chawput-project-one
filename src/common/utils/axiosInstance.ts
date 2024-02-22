@@ -2,6 +2,7 @@ import axios from 'axios'
 import toast from 'react-hot-toast'
 
 const API_URL = import.meta.env.VITE_API_URL as string
+const TOKEN = import.meta.env.VITE_TOKEN as string
 
 // Create an instance of Axios with default headers
 /* set connection timeout 10 second */
@@ -9,7 +10,7 @@ const axiosInstance = axios.create({
 	baseURL: API_URL, // Set your API base URL
 	headers: {
 		'Content-Type': 'application/json',
-		Authorization: `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NjIsImlhdCI6MTcwODU4NjQ3MiwiZXhwIjoxNzExMTc4NDcyfQ.QdUjkx8leaMjdRoAds6pnxYdd08SeF6Yk9MU0796kJM` // Set your default authorization token
+		Authorization: `Bearer ${TOKEN}` // Set your default authorization token
 	},
 	timeout: 5000
 })
