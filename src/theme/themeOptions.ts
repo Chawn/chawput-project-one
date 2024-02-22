@@ -61,6 +61,15 @@ export const themeOptions: ThemeOptions = {
 	direction: 'rtl',
 
 	components: {
+		MuiOutlinedInput: {
+			styleOverrides: {
+				input: {
+					height: '38px!important',
+					padding: '5px 14px!important'
+				}
+			}
+		},
+
 		// MuiCssBaseline: {
 		// 	styleOverrides: `
 		//     @font-face {
