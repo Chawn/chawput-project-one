@@ -89,7 +89,7 @@ export default function DialogVerifyThaiID() {
 	useEffect(() => {
 		reset()
 		setUploadPhoto('')
-	}, [])
+	}, [openDialogVerify])
 
 	const handleClose = () => {
 		setOpenDialogVerify(false)
