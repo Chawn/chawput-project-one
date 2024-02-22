@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.MuiDataGrid-root .MuiDataGrid-cell:focus,
+.MuiDataGrid-root .MuiDataGrid-cell:focus-within,
+.MuiDataGrid-root .MuiDataGrid-columnHeader:focus,
+.MuiDataGrid-root .MuiDataGrid-columnHeader:focus-within {
+  outline: none !important;
+}
+
+.MuiFormLabel-root {
+  color: #222222 !important;
+}
+
+.Mui-required span.MuiFormLabel-asterisk {
+  color: red !important;
+}/*# sourceMappingURL=index.css.map */
