@@ -1,6 +1,5 @@
-import { Box, Button, Container, Link, Typography } from '@mui/material'
+import { Box, Button, Container, Typography } from '@mui/material'
 import { makeStyles } from '@mui/styles'
-import React from 'react'
 import { menu1, menu2, menu3, menu4 } from './menu_list'
 import LogoFooterIcon from '@/assets/icons/LogoFooterIcon'
 import YoutubeIcon from '@/assets/icons/YoutubeIcon'

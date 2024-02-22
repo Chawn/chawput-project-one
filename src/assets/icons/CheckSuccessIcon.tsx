@@ -1,5 +1,3 @@
-import React from 'react'
-
 export default function CheckSuccessIcon({ width, height }: any) {
 	return (
 		<svg

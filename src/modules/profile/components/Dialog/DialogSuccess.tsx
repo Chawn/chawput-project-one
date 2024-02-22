@@ -1,20 +1,15 @@
-import * as React from 'react'
-import Button from '@mui/material/Button'
-import { styled } from '@mui/material/styles'
-import Dialog from '@mui/material/Dialog'
-import DialogTitle from '@mui/material/DialogTitle'
-import DialogContent from '@mui/material/DialogContent'
-import DialogActions from '@mui/material/DialogActions'
-import IconButton from '@mui/material/IconButton'
-import CloseIcon from '@mui/icons-material/Close'
-import Typography from '@mui/material/Typography'
-import { useProfileStore } from '../../store/useProfileStore'
-import { makeStyles } from '@mui/styles'
-import { FormControl, FormLabel, TextField } from '@mui/material'
-import UploadIcon from '@/assets/icons/UploadIcon'
 import CheckSuccessIcon from '@/assets/icons/CheckSuccessIcon'
+import CloseIcon from '@mui/icons-material/Close'
+import Button from '@mui/material/Button'
+import Dialog from '@mui/material/Dialog'
+import DialogContent from '@mui/material/DialogContent'
+import DialogTitle from '@mui/material/DialogTitle'
+import IconButton from '@mui/material/IconButton'
+import { styled } from '@mui/material/styles'
+import { makeStyles } from '@mui/styles'
+import { useProfileStore } from '../../store/useProfileStore'
 
-const BootstrapDialog = styled(Dialog)(({ theme }) => ({
+const BootstrapDialog = styled(Dialog)(() => ({
 	'& .MuiDialogContent-root': {
 		padding: 0,
 		width: '360px'
@@ -58,9 +53,6 @@ export default function DialogSuccess() {
 	const classes = useStyles()
 	const { openDialogSuccess, setOpenDialogSuccess } = useProfileStore()
 
-	const handleClickOpen = () => {
-		setOpenDialogSuccess(true)
-	}
 	const handleClose = () => {
 		setOpenDialogSuccess(false)
 	}

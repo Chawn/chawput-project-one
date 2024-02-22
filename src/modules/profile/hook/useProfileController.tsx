@@ -1,8 +1,8 @@
+import { useState } from 'react'
 import toast from 'react-hot-toast'
-import { IBodyVerifyThaiNationID, IUser } from '../api/interface'
+import { IBodyVerifyThaiNationID } from '../api/interface'
 import { getUser, verifyThaiNationID } from '../api/rest'
 import { useProfileStore } from '../store/useProfileStore'
-import { useState } from 'react'
 
 export default function useProfileController() {
 	const [isLoadingVerify, setIsLoadingVerify] = useState<boolean>(false)

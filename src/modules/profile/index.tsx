@@ -1,13 +1,13 @@
-import Box from '@mui/material/Box'
-import Container from '@mui/material/Container'
-import SidebarLeft from './components/SidebarLeft'
-import MainContent from './components/MainContent'
 import Footer from '@/common/components/Footer'
 import Topbar from '@/common/components/Topbar'
-import DialogVerifyThaiID from './components/Dialog/DialogVerifyThaiID'
+import Box from '@mui/material/Box'
+import Container from '@mui/material/Container'
 import { useQuery } from '@tanstack/react-query'
-import useProfileController from './hook/useProfileController'
 import DialogSuccess from './components/Dialog/DialogSuccess'
+import DialogVerifyThaiID from './components/Dialog/DialogVerifyThaiID'
+import MainContent from './components/MainContent'
+import SidebarLeft from './components/SidebarLeft'
+import useProfileController from './hook/useProfileController'
 
 export default function Home() {
 	const { fetchUser } = useProfileController()

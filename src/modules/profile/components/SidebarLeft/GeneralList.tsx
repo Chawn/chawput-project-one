@@ -1,14 +1,14 @@
-import ListSubheader from '@mui/material/ListSubheader'
+import BellIcon from '@/assets/icons/BellIcon'
+import HearthIcon from '@/assets/icons/HeartIcon'
+import MessageIcon from '@/assets/icons/MessageIcon'
+import UserCircleIcon from '@/assets/icons/UserCircleIcon'
+import { Box } from '@mui/material'
 import List from '@mui/material/List'
 import ListItemButton from '@mui/material/ListItemButton'
 import ListItemIcon from '@mui/material/ListItemIcon'
 import ListItemText from '@mui/material/ListItemText'
-import UserCircleIcon from '@/assets/icons/UserCircleIcon'
-import BellIcon from '@/assets/icons/BellIcon'
-import MessageIcon from '@/assets/icons/MessageIcon'
-import HearthIcon from '@/assets/icons/HeartIcon'
+import ListSubheader from '@mui/material/ListSubheader'
 import { makeStyles } from '@mui/styles'
-import { Box } from '@mui/material'
 
 const useStyles = makeStyles({
 	badge: {

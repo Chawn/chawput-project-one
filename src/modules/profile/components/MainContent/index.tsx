@@ -1,15 +1,15 @@
-import PhotoIcon from '@/assets/icons/PhotoIcon'
-import { Box, Button, IconButton, Typography } from '@mui/material'
-import { makeStyles } from '@mui/styles'
-import Cover from '@/assets/images/cover.png'
 import CameraIcon from '@/assets/icons/CameraIcon'
-import UserIcon from '@/assets/icons/UserIcon'
-import MailIcon from '@/assets/icons/MailIcon'
 import ErrorIcon from '@/assets/icons/ErrorIcon'
 import IdCardIcon from '@/assets/icons/IdCardIcon'
 import LockIcon from '@/assets/icons/LockIcon'
-import { useProfileStore } from '../../store/useProfileStore'
+import MailIcon from '@/assets/icons/MailIcon'
+import PhotoIcon from '@/assets/icons/PhotoIcon'
+import UserIcon from '@/assets/icons/UserIcon'
 import VerifiedIcon from '@/assets/icons/VerifiedIcon'
+import Cover from '@/assets/images/cover.png'
+import { Box, Button, IconButton, Typography } from '@mui/material'
+import { makeStyles } from '@mui/styles'
+import { useProfileStore } from '../../store/useProfileStore'
 
 const useStyles = makeStyles({
 	card: {

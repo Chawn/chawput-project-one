@@ -1,8 +1,8 @@
-import { Box, Button, Divider, Typography } from '@mui/material'
-import UserImage80 from '@/assets/images/user-image-80.png'
 import ShieldCheckIcon from '@/assets/icons/ShieldCheckIcon'
 import StartFillIcon from '@/assets/icons/StartFillIcon'
 import StartOutlinedIcon from '@/assets/icons/StartOutlinedIcon'
+import UserImage80 from '@/assets/images/user-image-80.png'
+import { Box, Divider, Typography } from '@mui/material'
 import { makeStyles } from '@mui/styles'
 import GeneralList from './GeneralList'
 
